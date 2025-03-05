@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://mysever.vn.com" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" id="name" name="Họ và tên"></td>
+            </tr>
+            <tr>
+                <td><label for="ngày sinh">Ngày sinh:</label></td>
+                <td><input type="date" id="ngày sinh" name="Ngày sinh"></td>
+            </tr>
+            <tr>
+                <td><label for="giới tính">Giới tính:</label></td>
+                <td>
+                    <input type="radio" id="giới tính" name="Giới tính" value="Nam">Nam
+                    <input type="radio" id="giới tính" name="Giới tính" value="Nữ">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Số điện thoại:</label></td>
+                <td><input type="tel" id="phone" name="Số điện thoại" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="Email"></td>
+            </tr>
+            <tr>
+                <td><label for="tên công ty">Tên công ty:</label></td>
+                <td><input type="text" id="tên công ty" name="Tên công ty"></td>
+            </tr>
+            <tr>
+                <td><label for="vai trò công ty">Vai trò công ty:</label></td>
+                <td>
+                    <select name="Vai trò công ty" id="vai trò công ty">
+                    <option value="Giám đốc điều hành (CEO)">Giám đốc điều hành (CEO)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="quy mô công ty">Quy mô công ty:</label></td>
+                <td>
+                    <select name="Quy mô công ty" id="quy mô công ty">
+                        <option value="Doanh nghiệp nhỏ">Doanh nghiệp nhỏ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ngành nghề công ty">Ngành nghề công ty:</label></td>
+                <td><input type="text" id="ngành nghề công ty" name="Ngành nghề công ty"></td>
+            </tr>
+            <tr>
+                <td><label for="lý do tham gia clb">Lý do tham gia câu lạc bộ:</label></td>
+                <td><textarea name="Lý do tham gia câu lạc bộ" id="lý do tham gia clb"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="kinh doanh lão nghiệp">Kinh doanh lão nghiệp:</label></td>
+                <td><textarea name="Kinh doanh lão nghiệp" id="kinh doanh lão nghiệp"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mục tiêu khi tham gia clb">Mục tiêu khi tham gia câu lạc bộ:</label></td>
+                <td><textarea name="Mục tiêu khi tham gia câu lạc bộ" id="mục tiêu khi tham gia clb"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="chương trình sk muốn tham gia">Chương trình sự kiện muốn tham gia:</label></td>
+                <td>
+                    <input type="checkbox" id="chương trình sk muốn tham gia" name="Chương trình sự kiện muốn tham gia"value="Networking">Networking
+                    <input type="checkbox" id="chương trình sk muốn tham gia" name="Chương trình sự kiện muốn tham gia" value="Workshops">Workshops
+                    <input type="checkbox" id="chương trình sk muốn tham gia" name="Chương trình sự kiện muốn tham gia" value="Hội thảo">Hội thảo
+                </td>
+            </tr>
+            <tr>
+                <td><label for="đăng kí nhận bản tin">Đăng kí nhận bản tin:</label></td>
+                <td><input type="checkbox" id="đăng kí nhận bản tin" name="Đăng kí nhận bản tin" value="Có">Có</td>
+            </tr>
+        </table>
+        <div>
+            <button>Đăng kí hội viên</button>
+        </div>
+    </form>
+</body>
+
+</html>

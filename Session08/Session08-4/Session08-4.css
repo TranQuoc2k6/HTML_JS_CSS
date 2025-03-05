@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #3d4448;
+    font-size: 16px;
+  }
+  
+  .service-container h3 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  
+  .service-container .horizontal-ruler {
+    width: 120px;
+    height: 2px;
+    background-color: orangered;
+    margin-bottom: 30px;
+  }
+  
+  .service-container i {
+    font-size: 40px;
+    color: orangered;
+    text-align: center;
+    transform: translate(0%, 25%) rotate(-45deg);
+  }
+  
+  .service-container table td {
+    padding: 30px;
+  }
+  
+  .service-container table h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .service-container table .rotate-border {
+    border: 1px solid black;
+    /* padding: 20px; */
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    transform: rotate(45deg);
+  }
+  

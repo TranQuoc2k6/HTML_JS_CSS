@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containal {
+    width: 510px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.big p {
+    background-color: #2c3e50;
+    color: white;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 45px;
+    padding-top: 20px;
+}
+
+.small {
+    width: 234px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 3px;
+}
+
+.small .boxSmaill {
+    color: white;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 112px;
+    margin-top: 10px;
+}
