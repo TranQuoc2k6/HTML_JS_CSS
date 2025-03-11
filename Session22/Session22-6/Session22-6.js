@@ -5,9 +5,7 @@ for (let char of numbers) {
         frequency[char] = (frequency[char] || 0) + 1;
     }
 }
-console.log("So lan xuat hien")
-alert("So lan xuat hien:");
+console.log("So lan xuat hien");
 for (let num in frequency) {
     console.log(`So ${num} xuat hien ${frequency[num]} lan`);
-    alert(`So ${num} xuat hien ${frequency[num]} lan`)
 }
