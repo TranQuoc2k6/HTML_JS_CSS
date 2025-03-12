@@ -42,7 +42,7 @@ while (choice !== 7) {
                     sum += arr[i]
                 }
             }
-            console.log(`Tong cac so duong la: ${total}`)
+            console.log(`Tong cac so duong la: ${sum}`)
             let average = sum / arr.length;
             console.log(`Trung binh cong la ${average}`)
             break;

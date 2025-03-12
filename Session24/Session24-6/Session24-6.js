@@ -36,7 +36,6 @@ while (choice !== 7) {
             }
             break;
 
-
         case 5:
             let reversedStr = str.split("").reverse().join("");
             if (str === reversedStr) { 

@@ -1,6 +1,6 @@
-let n, m;
 let arr = [];
 let choice;
+let row, col;
 let menu = `
 ----------Menu---------
 1. Nhập mảng 2 chiều
@@ -16,47 +16,46 @@ while (choice !== 7) {
 
     switch (choice) {
         case 1:
-            n = +prompt("Nhập số hàng trong mảng: ");
-            m = +prompt("Nhập số cột trong mảng: ");
-            if (n > 0 && m > 0) {
-                arr = [];
-                for (let i = 0; i < n; i++) {
+            row = +prompt("Nhap so hang trong mang: ");
+            col = +prompt("Nhap so cot trong mang: ");
+            if (row > 0 && col > 0) {
+                for (let i = 0; i < row; i++) {
                     arr[i] = [];
-                    for (let j = 0; j < m; j++) {
-                        arr[i][j] = +prompt(`Nhập phần tử arr[${i}][${j}]: `);
+                    for (let j = 0; j < col; j++) {
+                        arr[i][j] = +prompt(` arr[${i}][${j}]: `);
                     }
                 }
-                console.log("Mảng đã được nhập thành công!");
+                console.log("Mang da duoc nhap");
             } else {
-                console.log("Kích thước mảng không hợp lệ!");
+                console.log("Mang khong kha dung");
             }
             break;
 
         case 2:
             if (arr.length === 0) {
-                alert("Mảng chưa được nhập!");
+                console.log("Mang khong ton tai");
             } else {
-                let matrix = arr.map(row => row.join("\t")).join("\n");
-                alert(`Mảng 2 chiều:\n${matrix}`);
+                let matrix = arr.map(row => row.join("")).join("");
+                console.log(`:${matrix}`);
             }
             break;
 
         case 3:
             if (arr.length === 0) {
-                alert("Mảng chưa được nhập!");
+                console.log("Mang khong ton tai");
             } else {
                 let sum = arr.flat().reduce((acc, val) => acc + val, 0);
-                alert(`Tổng các phần tử trong mảng là: ${sum}`);
+                console.log(`Tong phan tu trong mang la: ${sum}`);
             }
             break;
 
         case 4:
             if (arr.length === 0) {
-                alert("Mảng chưa được nhập!");
+                console.log("Mang khong ton tai");
             } else {
                 let max = arr[0][0], indexRow = 0, indexCol = 0;
-                for (let i = 0; i < n; i++) {
-                    for (let j = 0; j < m; j++) {
+                for (let i = 0; i < row; i++) {
+                    for (let j = 0; j < col; j++) {
                         if (arr[i][j] > max) {
                             max = arr[i][j];
                             indexRow = i;
@@ -64,31 +63,31 @@ while (choice !== 7) {
                         }
                     }
                 }
-                alert(`Phần tử lớn nhất là ${max} tại vị trí [${indexRow}][${indexCol}]`);
+                console.log(`Phan tu lon nhat la: ${max}, vi tri [${indexRow}][${indexCol}]`);
             }
             break;
 
         case 5:
             if (arr.length === 0) {
-                alert("Mảng chưa được nhập!");
+                console.log("Mang khong ton tai");
             } else {
-                let row = +prompt(`Nhập số hàng (từ 1 đến ${n}): `);
-                if (row < 1 || row > n) {
-                    alert("Hàng không hợp lệ!");
+                let rowInput = +prompt(`Nhập số hàng (từ 1 đến ${n}): `);
+                if (rowInput < 1 || rowInput > n) {
+                    console.log("Khong hop le");
                 } else {
                     let sumRow = arr[row - 1].reduce((acc, val) => acc + val, 0);
                     let avg = sumRow / m;
-                    alert(`Trung bình cộng của hàng ${row} là: ${avg.toFixed(2)}`);
+                    console.log(`Trung binh cong cua hang ${row} la: ${avg.toFixed(2)}`);
                 }
             }
             break;
 
         case 6:
             if (arr.length === 0) {
-                alert("Mảng chưa được nhập!");
+                console.log("Mang khong ton tai");
             } else {
                 arr.reverse();
-                alert("Đã đảo ngược các hàng trong mảng!");
+                console.log(arr);
             }
             break;
 
