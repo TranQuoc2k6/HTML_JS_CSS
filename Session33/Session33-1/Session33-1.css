@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 10;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+#icon {
+    position: relative;
+    right: 50px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+input#password-id {
+    padding-right: 50px;
+}
