@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#email {
+    padding: 6px 150px 6px 10px;
+}
+
+#password {
+    padding: 6px 150px 6px 10px;
+}
+
+#check-password {
+    padding: 6px 150px 6px 10px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 138px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+}
