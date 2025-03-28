@@ -1,0 +1,28 @@
+#background {
+    text-align: center;
+}
+
+button {
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.purple {
+    background-color: purple;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="Session35-2.css" />
+</head>
+
+<body>
+    <button class="add" id="add-bookmark">ADD BOOKMARK</button>
+
+    <div id="content">
+        <!-- Bookmark list will be displayed here -->
+    </div>
+
+    <div class="container" id="container-add">
+        <form id="bookmark-form">
+            <div class="head-input">
+                <h4>Add Bookmark</h4>
+                <i class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="body-input">
+                <label for="name-input">Website Name</label>
+                <input id="name-input" type="text" required />
+
+                <label for="url-input">Website URL</label>
+                <input id="url-input" type="text" required />
+
+                <button id="save" type="button">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Session35-2.js"></script>
+</body>
+
+</html>
